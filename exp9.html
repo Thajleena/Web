@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Mouse Over</title>
+<body bgcolor="pink">
+<center><h2><font color="purple">MOUSE OVER AND MOUSE OUT</font></h2></center>
+<p><i><font color="red">When mouse pointer is over the video it changes to another video <br> Likewise when the mouse pointer moves away from the video the previous video is shown<br> Try pointing the mouse below video:</font></i><p>
+<center><h1 id="text">Hello</h1>
+<img  src="faa.gif" onmouseover="onmouse()" onmouseout="outmouse()" id="image">
+<script>
+function onmouse()
+{
+  document.getElementById("text").innerText="Welcome to my page";
+  document.getElementById("image").src="giphy.gif"
+}
+function outmouse()
+{
+  document.getElementById("text").innerText="Hello World";
+  document.getElementById("image").src="faa.gif";
+}
+</script>
+</center>
+</body>
+</html>
+
